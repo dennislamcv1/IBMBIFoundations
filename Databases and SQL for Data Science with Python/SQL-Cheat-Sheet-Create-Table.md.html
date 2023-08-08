@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <h2>SQL Cheat Sheet: CREATE TABLE, ALTER, DROP, TRUNCATE</h2>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DB0201EN-SkillsNetwork/labs/Module%202/images/IDSNlogo.png" width="200" height="200">
+    <table>
+      <tbody>
+        <tr>
+          <th style="width:10%">Command</th>
+          <th style="width:30%">Syntax</th>
+          <th style="width:30%">Description</th>
+          <th style="width:30%">Example</th>
+        </tr>
+        <tr>
+          <td style="width:10%">CREATE TABLE</td>
+          <td style="width:30%"><code>CREATE TABLE table_name (col1 datatype <i>optional keyword</i>, col2 datatype <i>optional keyword</i>,col3 datatype <i>optional keyword</i>,..., coln datatype <i>optional keyword</i>)</code></td>
+          <td style="width:30%"><code>CREATE TABLE</code> statement is to create the table. Each column in the table is specified with its name, data type and an optional keyword which could be <b>PRIMARY KEY</b>, <b>NOT NULL</b>, etc.,</td>
+          <td style="width:30%"><code>CREATE TABLE employee ( employee_id char(2) PRIMARY KEY, first_name varchar(30) NOT NULL, mobile int);</code></td>
+        </tr>
+        <tr>
+          <td style="width:10%">ALTER TABLE - ADD COLUMN</td>
+          <td style="width:30%"><code>ALTER TABLE table_name ADD COLUMN column_name_1 datatype....ADD COLUMN column_name_n datatype;</code></td>
+          <td style="width:30%"><code>ALTER TABLE</code> statement is used to add the columns to a table.</td>
+          <td style="width:30%"><code>ALTER TABLE employee ADD COLUMN income bigint;</code></td>
+        </tr>
+        <tr>
+          <td style="width:10%">ALTER TABLE - ALTER COLUMN</td>
+          <td style="width:30%"><code>ALTER TABLE table_name ALTER COLUMN column_name_1 SET DATA TYPE datatype;</code></td>
+          <td style="width:30%"><code>ALTER TABLE ALTER COLUMN </code>statement is used to modify the data type of columns.</td>
+          <td style="width:30%"><code>ALTER TABLE employee ALTER COLUMN mobile SET DATA TYPE CHAR(20);</code></td>
+        </tr>
+        <tr>
+          <td style="width:10%">ALTER TABLE - DROP COLUMN</td>
+          <td style="width:30%"><code>ALTER TABLE table_name DROP COLUMN column_name_1 ;</code></td>
+          <td style="width:30%"><code>ALTER TABLE DROP COLUMN </code>statement is used to remove columns from a table.</td>
+          <td style="width:30%"><code>ALTER TABLE employee DROP COLUMN mobile ;</code></td>
+        </tr>
+        <tr>
+          <td style="width:10%">ALTER TABLE - RENAME COLUMN</td>
+          <td style="width:30%"><code>ALTER TABLE table_name RENAME COLUMN current_column_name TO new_column_name;</code></td>
+          <td style="width:30%"><code>ALTER TABLE RENAME COLUMN </code>statement is used to rename the columns in a table.</td>
+          <td style="width:30%"><code>ALTER TABLE employee RENAME COLUMN first_name TO name ;</code></td>
+        </tr>
+        <tr>
+          <td style="width:10%">TRUNCATE TABLE</td>
+          <td style="width:30%"><code>TRUNCATE TABLE table_name IMMEDIATE;</code></td>
+          <td style="width:30%"><code>TRUNCATE TABLE</code> statement is used to delete all of the rows in a table. The IMMEDIATE specifies to process the statement immediately and that it cannot be undone.</td>
+          <td style="width:30%"><code>TRUNCATE TABLE employee IMMEDIATE ;</code></td>
+        </tr>
+        <tr>
+          <td style="width:10%">DROP TABLE</td>
+          <td style="width:30%"><code>DROP TABLE table_name ;</code></td>
+          <td style="width:30%">Use the <code>DROP TABLE</code> statement to delete a table from a database. If you delete a table that contains data, by default the data will be deleted alongside the table.</td>
+          <td style="width:30%"><code>DROP TABLE employee ;</code></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Author(s)</h2>
+    <p><a href="https://www.linkedin.com/in/birlahimanshu/?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDB0201ENSkillsNetwork20127838-2022-01-01" target="_blank" rel="external">Himanshu Birla</a></p>
+    <h2>Changelog</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2021-07-27</td>
+          <td>1.0</td>
+          <td>Himanshu Birla</td>
+          <td>Initial Version</td>
+        </tr>
+      </tbody>
+    </table>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>

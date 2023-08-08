@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <h2>SQL Cheat Sheet: Basics - SELECT, INSERT, UPDATE, DELETE, COUNT, DISTINCT, LIMIT</h2>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DB0201EN-SkillsNetwork/labs/Module%202/images/IDSNlogo.png" width="200" height="200">
+    <table>
+      <tbody>
+        <tr>
+          <th style="width:10%">Command</th>
+          <th style="width:30%">Syntax</th>
+          <th style="width:30%">Description</th>
+          <th style="width:30%">Example</th>
+        </tr>
+        <tr>
+          <td style="width:10%">SELECT</td>
+          <td style="width:30%"><code>SELECT column1, column2, ... FROM table_name;</code></td>
+          <td style="width:30%"><code>SELECT</code> statement is used to fetch data from a database.</td>
+          <td style="width:30%"><code>SELECT city FROM placeofinterest;</code></td>
+        </tr>
+        <tr>
+          <td style="width:10%">WHERE</td>
+          <td style="width:30%"><code>SELECT column1, column2, ...FROM table_name WHERE condition;</code></td>
+          <td style="width:30%"><code>WHERE</code> clause is used to extract only those records that fulfill a specified condition.</td>
+          <td style="width:30%"><code>SELECT * FROM placeofinterest WHERE city == 'Rome' ;</code></td>
+        </tr>
+        <tr>
+          <td style="width:10%">COUNT</td>
+          <td style="width:30%"><code>SELECT COUNT * FROM table_name ;</code></td>
+          <td style="width:30%"><code>COUNT</code> is a function that takes the name of a column as argument and counts the number of rows when the column is not NULL.</td>
+          <td style="width:30%"><code>SELECT COUNT(country) FROM placeofinterest WHERE country='Canada';</code></td>
+        </tr>
+        <tr>
+          <td style="width:10%">DISTINCT</td>
+          <td style="width:30%"><code>SELECT DISTINCT columnname FROM table_name;</code></td>
+          <td style="width:30%"><code>DISTINCT</code> function is used to specify that the statement is a query which returns unique values in specified columns.</td>
+          <td style="width:30%"><code>SELECT DISTINCT country FROM placeofinterest WHERE type='historical';</code></td>
+        </tr>
+        <tr>
+          <td style="width:10%">LIMIT</td>
+          <td style="width:30%"><code>SELECT * FROM table_name LIMIT number;</code></td>
+          <td style="width:30%"><code>LIMIT</code> is a clause to specify the maximum number of rows the result set must have.</td>
+          <td style="width:30%"><code>SELECT * FROM placeofinterest WHERE airport="pearson" LIMIT 5;</code></td>
+        </tr>
+        <tr>
+          <td style="width:10%">INSERT</td>
+          <td style="width:30%"><code>INSERT INTO table_name (column1,column2,column3...) VALUES(value1,value2,value3...);</code></td>
+          <td style="width:30%"><code>INSERT</code> is used to insert new rows in the table.</td>
+          <td style="width:30%"><code>INSERT INTO placeofinterest (name,type,city,country,airport) VALUES('Niagara Waterfalls','Nature','Toronto','Canada','Pearson');</code></td>
+        </tr>
+        <tr>
+          <td style="width:10%">UPDATE</td>
+          <td style="width:30%"><code>UPDATE table_name SET[[column1]=[VALUES]] WHERE [condition];</code></td>
+          <td style="width:30%"><code>UPDATE</code> used to update the rows in the table.</td>
+          <td style="width:30%"><code>UPDATE placeofinterest SET name = 'Niagara Falls' WHERE name = "Niagara Waterfalls";</code></td>
+        </tr>
+        <tr>
+          <td style="width:10%">DELETE</td>
+          <td style="width:30%"><code>DELETE FROM table_name WHERE [condition];</code></td>
+          <td style="width:30%"><code>DELETE</code> statement is used to remove rows from the table which are specified in the WHERE condition.</td>
+          <td style="width:30%"><code>DELETE FROM placeofinterest WHERE city IN ('Rome','Vienna');</code></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Author(s)</h2>
+    <p><a href="https://www.linkedin.com/in/malika-goyal-04798622/?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDB0201ENSkillsNetwork20127838-2022-01-01" target="_blank" rel="external">Malika Singla</a></p>
+    <h2>Changelog</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2021-07-27</td>
+          <td>1.0</td>
+          <td>Malika</td>
+          <td>Initial Version</td>
+        </tr>
+      </tbody>
+    </table>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>
