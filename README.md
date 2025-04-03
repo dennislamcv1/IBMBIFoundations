@@ -1,8 +1,14 @@
 # IBMBIFoundations
 ## BI Foundations with SQL, ETL and Data Warehousing Specialization
 
-Professionals with SQL, ETL, Enterprise Data Warehousing (EDW), Business Intelligence (BI) and Data Analysis skills are in great demand. This Specialization is designed to provide career relevant knowledge and skills for anyone wanting to pursue a job role in domains such as Data Engineering, Data Management, BI or Data Analytics. 
+The job market for business intelligence (BI) analysts is expected to grow by23 percent from 2021 to 2031 (US Bureau of Labor Statistics). This IBM specialization gives you sought-after skills employers look for when recruiting for a BI analyst.
 
-The program consists of four online courses. In the first course you learn the basics of SQL and how to query relational databases with this powerful language. Next you learn to use essential Linux commands and create basic shell scripts. You continue your journey by learning to build and automate ETL, ELT and data pipelines using BASH scripts, Apache Airflow and Apache Kafka. In the final course you learn about Data Lakes, Data Marts as well as work with Data Warehouses.  You also create interactive reports and dashboards to derive insights from data in your warehouse.  
+BI analysts gather, clean, and analyze key business data to find patterns and insights that aid business decision-making. 
 
-Note that this specialization has a significant emphasis on hands-on practice employing real tools used by data professionals. Every course has numerous hands-on labs as well as a course project. While you will benefit from some prior programming experience, it is not absolutely necessary for this course. The only pre-requisites for this specialization are basic computer and data literacy, and a passion to self-learn online. 
+During this specialization, you’ll learn the basics of SQL, focusing on how to query relational databases using this popular and powerful language. You’ll use essential Linux commands to create basic shell scripts. Plus, you’ll learn how to build and automate ETL, ELT, and data pipelines using BASH scripts, Apache Airflow, and Apache Kafka.
+
+You’ll discover why companies use data lakes and data marts, and work with adata warehouse. Plus, you’ll dive into the rewarding aspect of BI, creating interactive reports and dashboards so you can derive insights from data in your warehouse. 
+
+Additionally, you’ll gain valuable hands-on practice employing real-world tools used by data professionals. Each course has numerous hands-on labs and includes a project, which gives you plenty to talk about in interviews. 
+
+When you complete the full program, you’ll have a shareableportfolio of projects and a Specialization certificate for your resume and LinkedIn profile. 
