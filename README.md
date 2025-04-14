@@ -1,5 +1,5 @@
 # IBMBIFoundations
-## BI Foundations with SQL, ETL and Data Warehousing Specialization
+## BI Foundations with SQL, ETL and Data Warehousing Specialization (5 course series)
 
 The job market for business intelligence (BI) analysts is expected to grow by23 percent from 2021 to 2031 (US Bureau of Labor Statistics). This IBM specialization gives you sought-after skills employers look for when recruiting for a BI analyst.
 
